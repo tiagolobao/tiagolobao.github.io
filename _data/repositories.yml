@@ -1,11 +1,16 @@
 github_users:
   - tiagolobao
 
+repo_description_lines_max: 2
+
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - link: tiagolobao/CS5490
+    comment: "This was related to my final paper during graduation, my most download open source project!"
+  - link: tiagolobao/InoBencher
+    comment: "This was my first FreeRTOS project on arduino. Also, it did not use Arduino IDE at all, so I was free to organize it the way I wanted"
+  - link: tiagolobao/heaplessLinkedList
+    comment: "Does this exists with another name? It was useful to avoid mallocs"
+  - link: tiagolobao/ArduinoVoiceSynthesizer
+    comment: "My project where I submitted to a competition. Great first experience on embedded systems"
+  - link: tiagolobao/Domino
+    comment: "This was my first project using data structures."
