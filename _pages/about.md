@@ -2,24 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: mypicture.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>📍 Campinas - SP</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! I'm Tiago, born in 1994 and originally from Brazil, Salvador - BA. I studied electrical engineering, which led me to an exciting career working with embedded automotive systems. My passion for engineering and technology drives my professional life, allowing me to contribute to innovations in the automotive industry. My interest throughout my career is to make a difference by creating useful software and solutions. For more professional info, check out my [CV](/cv)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+A significant chapter of my life was spent in Sofia, Bulgaria, where I lived for four years. This experience broadened my horizons and enriched my cultural understanding, shaping me both personally and professionally. You can check some of my trip on [instagram](https://www.instagram.com/lobao_tiago/)
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Beyond my work, music are related to most of my hobbies. Whether it's playing an instrument, listening to my favorite tracks, or dancing, music is an integral part of who I am. (Still pending to create more content about it).
