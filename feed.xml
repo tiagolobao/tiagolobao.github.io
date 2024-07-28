@@ -1,67 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://tiagolobao.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://tiagolobao.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-07-28T11:45:16+00:00</updated><id>https://tiagolobao.github.io/feed.xml</id><title type="html">Tiago Lobao</title><subtitle>Tiago Lobao personal website </subtitle><entry><title type="html">Using Steam Deck as Development PC</title><link href="https://tiagolobao.github.io/blog/2024/using-steam-deck-as-development-pc/" rel="alternate" type="text/html" title="Using Steam Deck as Development PC"/><published>2024-07-27T16:24:43+00:00</published><updated>2024-07-27T16:24:43+00:00</updated><id>https://tiagolobao.github.io/blog/2024/using-steam-deck-as-development-pc</id><content type="html" xml:base="https://tiagolobao.github.io/blog/2024/using-steam-deck-as-development-pc/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">a post with code</title><link href="https://tiagolobao.github.io/blog/2015/code/" rel="alternate" type="text/html" title="a post with code"/><published>2015-07-15T15:09:00+00:00</published><updated>2015-07-15T15:09:00+00:00</updated><id>https://tiagolobao.github.io/blog/2015/code</id><content type="html" xml:base="https://tiagolobao.github.io/blog/2015/code/"><![CDATA[<p>This theme implements a built-in Jekyll feature, the use of Rouge, for syntax highlighting. It supports more than 100 languages. This example is in C++. All you have to do is wrap your code in markdown code tags:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">c++
-</span><span class="n">code</span> <span class="n">code</span> <span class="n">code</span>
-<span class="p">```</span>
-</code></pre></div></div> <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-    <span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://tiagolobao.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://tiagolobao.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-07-28T12:26:54+00:00</updated><id>https://tiagolobao.github.io/feed.xml</id><title type="html">Tiago Lobao</title><subtitle>Tiago Lobao personal website </subtitle><entry><title type="html">Using Steam Deck as Development PC</title><link href="https://tiagolobao.github.io/blog/2024/using-steam-deck-as-development-pc/" rel="alternate" type="text/html" title="Using Steam Deck as Development PC"/><published>2024-07-27T16:24:43+00:00</published><updated>2024-07-27T16:24:43+00:00</updated><id>https://tiagolobao.github.io/blog/2024/using-steam-deck-as-development-pc</id><content type="html" xml:base="https://tiagolobao.github.io/blog/2024/using-steam-deck-as-development-pc/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">Using Steam Deck as Development PC</title><link href="https://tiagolobao.github.io/blog/2024/steamos-env-tools/" rel="alternate" type="text/html" title="Using Steam Deck as Development PC"/><published>2024-07-24T15:09:00+00:00</published><updated>2024-07-24T15:09:00+00:00</updated><id>https://tiagolobao.github.io/blog/2024/steamos-env-tools</id><content type="html" xml:base="https://tiagolobao.github.io/blog/2024/steamos-env-tools/"><![CDATA[<p>Hello! Long story short: I no longer have my standard computer and am left only with my Steam Deck. I thought, “I’ll just use it as a PC and start programming since it’s based on Arch Linux, right?” WRONG! I had to make many changes to the system to get everything working. Here, I’ll list the modifications I made and provide references for you (and my future self). Some of these might not apply to you, so just use what you need:</p> <blockquote> <p>Some of those changes will be reverted after a system upgrade</p> </blockquote> <h3 id="create-a-password-for-default-user">Create a password for default user</h3> <p>Otherwise, you cannot use sudo!</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>passwd
+</code></pre></div></div> <p><a href="https://www.ibm.com/docs/en/zos/2.4.0?topic=commands-using-passwd-command&amp;source=post_page-06f6df15c0e5">Ref</a></p> <h3 id="enable-changes-in-system-files">Enable changes in system files</h3> <p>Protection created by Valve for gaming-only users</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>steamos-readonly disable <span class="c"># Allows you to install packages</span>
+<span class="nb">sudo </span>steamos-readonly <span class="nb">enable</span> <span class="c"># Revert default config</span>
+<span class="nb">sudo </span>steamos-readonly status <span class="c"># Current status</span>
+</code></pre></div></div> <p><a href="https://www.reddit.com/r/SteamDeck/comments/t6w9at/how_to_get_rid_of_read_only_filesystem_folders/?utm_content=title&amp;utm_medium=post_embed&amp;utm_name=586be786354945a0a7f5dbfe42b91a3b&amp;utm_source=embedly&amp;utm_term=t6w9at">Ref</a></p> <h3 id="config-keyring">Config keyring</h3> <p>Is a collection of PGP (Pretty Good Privacy) keys used to verify the authenticity and integrity of pacman’s packages.</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>pacman-key <span class="nt">--init</span> <span class="c">#Initializes pacman-key</span>
+<span class="nb">sudo </span>pacman-key <span class="nt">--populate</span> archlinux <span class="c">#Install standard archlinux keys</span>
+<span class="nb">sudo </span>pacman-key <span class="nt">--populate</span> holo <span class="c">#Install holo keys</span>
+</code></pre></div></div> <p><a href="https://wiki.archlinux.org/title/Pacman/Package_signing?source=post_page-----06f6df15c0e5--------------------------------">Ref</a></p> <h3 id="re-install-libraries">Re-install libraries</h3> <p>Some “unnecessary” library files were removed for size reduction rootfs, so you need to re-install then.</p> <p>This is a fix that you need if you find yourself with an error like: “fatal error: stdlib.h: No such file or directory”</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-Qk</span> <span class="c"># List missing files on the system</span>
+<span class="c"># glibc: "X" total files, "Y" missing files</span>
+<span class="c"># git: 792 total files, 200 missing files</span>
 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
+<span class="c"># Example of reinstallation of some libraries</span>
+<span class="nb">sudo </span>pacman <span class="nt">-Sy</span> glibc linux-api-headers <span class="c">#Reinstallation of C packages</span>
+<span class="nb">sudo </span>pacman <span class="nt">-Sy</span> git <span class="c">#Reinstallation of git</span>
 
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
+pacman <span class="nt">-Qk</span> <span class="c"># List again the missing files</span>
+<span class="c"># glibc: 1600 total files, 0 missing files</span>
+<span class="c"># git: 792 total files, 0 missing files</span>
 
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div> <p>For displaying code in a list item, you have to be aware of the indentation, as stated in this <a href="https://stackoverflow.com/questions/34987908/embed-a-code-block-in-a-list-item-with-proper-indentation-in-kramdown/38090598#38090598">Stackoverflow answer</a>. You must indent your code by <strong>(3 * bullet_indent_level)</strong> spaces. This is because kramdown (the markdown engine used by Jekyll) indentation for the code block in lists is determined by the column number of the first non-space character after the list item marker. For example:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> We can put fenced code blocks inside nested bullets, too.
-<span class="p">
-   1.</span> Like this:<span class="sb">
-
-      ```c
-      printf("Hello, World!");
-      ```
-
-</span><span class="p">   2.</span> The key is to indent your fenced block in the same line as the first character of the line.
-</code></pre></div></div> <p>Which displays:</p> <ol> <li> <p>We can put fenced code blocks inside nested bullets, too.</p> <ol> <li> <p>Like this:</p> <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
-</code></pre></div> </div> </li> <li> <p>The key is to indent your fenced block in the same line as the first character of the line.</p> </li> </ol> </li> </ol> <p>By default, it does not display line numbers. If you want to display line numbers for every code block, you can set <code class="language-plaintext highlighter-rouge">kramdown.syntax_highlighter_opts.block.line_numbers</code> to true in your <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</p> <p>If you want to display line numbers for a specific code block, all you have to do is wrap your code in a liquid tag:</p> <p>{% highlight c++ linenos %} <br/> code code code <br/> {% endhighlight %}</p> <p>The keyword <code class="language-plaintext highlighter-rouge">linenos</code> triggers display of line numbers. Produces something like this:</p> <figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="err">\</span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-<span class="n">string</span> <span class="n">myString</span><span class="p">;</span>
-
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"input a string: "</span><span class="p">;</span>
-    <span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span> <span class="n">myString</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">myString</span><span class="p">.</span><span class="n">length</span><span class="p">();</span>
-
-    <span class="kt">char</span> <span class="n">charArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span> <span class="o">*</span> <span class="p">[</span><span class="n">length</span><span class="p">];</span>
-
-    <span class="n">charArray</span> <span class="o">=</span> <span class="n">myString</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">){</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">charArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[an example of a blog post with some code]]></summary></entry></feed>
+<span class="c"># NOTE: glibc was necessary for me to compile C/C++ code! Maybe you won't need it</span>
+</code></pre></div></div> <p><a href="https://www.reddit.com/r/SteamDeck/comments/t92ozw/for_compiling_c_code/?utm_content=title&amp;utm_medium=post_embed&amp;utm_name=33509299737d48cdaab913274cb5fc07&amp;utm_source=embedly&amp;utm_term=t92ozw">Ref</a></p> <h3 id="other-interesting-linkscomments">Other interesting links/comments</h3> <ol> <li> <p>Some similar notes</p> <p><a href="https://jimmyhub.net/article/548?source=post_page-----06f6df15c0e5--------------------------------">Ref</a> <a href="https://steamdecki.org/SteamOS/Read-only_Filesystem?source=post_page-----06f6df15c0e5--------------------------------">Ref</a></p> </li> <li> <p>Checking SteamOS pacman mirrors</p> <p><a href="https://steamdeck-packages.steamos.cloud/archlinux-mirror/holo-main/os/x86_64/?source=post_page-----06f6df15c0e5--------------------------------">Ref</a> <a href="https://www.reddit.com/r/SteamDeck/comments/wre33e/desktop_mode_users_which_pacman_mirror_steamdeck/?utm_content=title&amp;utm_medium=post_embed&amp;utm_name=94be7c6279af496a936685b289413583&amp;utm_source=embedly&amp;utm_term=wre33e">Ref</a></p> </li> <li> <p>HoloISO (SteamOS alternative) Operating System</p> <p><a href="https://holoiso.ru.eu.org/?source=post_page-----06f6df15c0e5--------------------------------">Ref</a></p> </li> <li> <p>Steam Deck plugins</p> <p><a href="https://steamdecklife.com/category/steam-deck-plugins/?source=post_page-----06f6df15c0e5--------------------------------">Ref</a></p> </li> </ol>]]></content><author><name></name></author><category term="posts"/><category term="code"/><category term="linux"/><category term="steamOS"/><category term="steamdeck"/><summary type="html"><![CDATA[How to install environment tools for development]]></summary></entry></feed>
