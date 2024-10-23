@@ -11,7 +11,7 @@ featured: true
 
 Hello! Long story short: I no longer have my standard computer and am left only with my Steam Deck. I thought, “I’ll just use it as a PC and start programming since it’s based on Arch Linux, right?” WRONG! I had to make many changes to the system to get everything working. Here, I’ll list the modifications I made and provide references for you (and my future self). Some of these might not apply to you, so just use what you need:
 
-> Some of those changes will be reverted after a system upgrade
+> Some of those changes may be reverted after a system upgrade
 
 
 ### Create a password for default user
