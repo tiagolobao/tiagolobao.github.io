@@ -80,7 +80,7 @@ pacman -Qk # List again the missing files
 1. Some similar notes
 
     [Ref](https://jimmyhub.net/article/548?source=post_page-----06f6df15c0e5--------------------------------)
-    [Ref](https://steamdecki.org/SteamOS/Read-only_Filesystem?source=post_page-----06f6df15c0e5--------------------------------)
+    <!-- [Ref](https://steamdecki.org/SteamOS/Read-only_Filesystem?source=post_page-----06f6df15c0e5--------------------------------) -->
 
 2. Checking SteamOS pacman mirrors
 
